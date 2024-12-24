@@ -8,9 +8,12 @@
     <img src="./shirt.jpg" height="300px"/>
 
     <style>.pp-KGZB7F2NDVWMN{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
-    <form action="https://www.paypal.com/ncp/payment/KGZB7F2NDVWMN" method="post" target="_top" class="paypal-button">
-        <input class="pp-KGZB7F2NDVWMN" type="submit" value="Buy Now" />
-        <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
-        <section> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
-    </form>
+    
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAxcpffXVjpQGI44T0tmzsq4Rp6bGZdI5KzR7nAYnbd-e1BPZSLc84Sb9PlWhKRHPnnSEkLqr6zM8paUQ&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+    <div id="paypal-container-Z6WBX2MD823HL"></div>
+    <script>
+    paypal.HostedButtons({
+        hostedButtonId: "Z6WBX2MD823HL",
+    }).render("#paypal-container-Z6WBX2MD823HL")
+    </script>
 </div>
