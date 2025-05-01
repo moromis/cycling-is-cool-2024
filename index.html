@@ -1,19 +1,22 @@
 <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="RCJCMH893LM8E"></script>
 </head>
 <div class="main">
     <h1>Cycling Is Cool</h1>
-    <h2 class="rainbow rainbow_text_animated">BUY THIS SHIRT?</h2>
+    <div class="view-cart">
+        <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+        <script>
+        cartPaypal.Cart({ id: "pp-view-cart" })
+        </script>
+    </div>
+    <h2 class="rainbow rainbow_text_animated" onclick="unhide()">BUY THIS SHIRT?</h2>
 
-    <img src="./shirt.jpg" height="300px"/>
+    <img src="./shirt.jpg" height="300px" />
 
-    <style>.pp-KGZB7F2NDVWMN{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
-    
-    <script src="https://www.paypal.com/sdk/js?client-id=BAAxcpffXVjpQGI44T0tmzsq4Rp6bGZdI5KzR7nAYnbd-e1BPZSLc84Sb9PlWhKRHPnnSEkLqr6zM8paUQ&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-    <div id="paypal-container-Z6WBX2MD823HL"></div>
+    <paypal-add-to-cart-button data-id="7GQ8V7UPUURG8" class="paypal-buttons"></paypal-add-to-cart-button>
     <script>
-    paypal.HostedButtons({
-        hostedButtonId: "Z6WBX2MD823HL",
-    }).render("#paypal-container-Z6WBX2MD823HL")
+    cartPaypal.AddToCart({ id: "7GQ8V7UPUURG8" })
     </script>
+
 </div>

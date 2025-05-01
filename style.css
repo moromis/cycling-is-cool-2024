@@ -14,14 +14,23 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-.paypal-button {
-    padding: 20px;
-    display: inline-grid;
-    justify-items: center;
-    align-content: start;
-    gap: 0.5rem;
+.paypal-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .css-1b6cd97 {
+        container-type: normal;
+    }
+}
+
+.view-cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 body::before {
@@ -44,6 +53,7 @@ body::before {
 body {
     position: relative;
     font-family: 'Arial', 'sans-serif';
+    width: 100vw;
 }
 
 .rainbow {
