@@ -5,17 +5,18 @@
 </head>
 <div class="main">
     <h1>Cycling Is Cool</h1>
+    <h2 class="rainbow rainbow_text_animated" onclick="unhide()">BUY THIS SHIRT?</h2>
+    <p>(Disclaimer: the shirt you get will likely differ somewhat)</p>
+
+    <img src="./shirt.jpg" height="300px" />
+
+    <paypal-add-to-cart-button data-id="7GQ8V7UPUURG8" class="paypal-buttons"></paypal-add-to-cart-button>
     <div class="view-cart">
         <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
         <script>
         cartPaypal.Cart({ id: "pp-view-cart" })
         </script>
     </div>
-    <h2 class="rainbow rainbow_text_animated" onclick="unhide()">BUY THIS SHIRT?</h2>
-
-    <img src="./shirt.jpg" height="300px" />
-
-    <paypal-add-to-cart-button data-id="7GQ8V7UPUURG8" class="paypal-buttons"></paypal-add-to-cart-button>
     <script>
     cartPaypal.AddToCart({ id: "7GQ8V7UPUURG8" })
     </script>
